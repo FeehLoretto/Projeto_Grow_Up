@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #00796B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header .container {
+    display: flex;
+    /* alinhamento horizontal */
+    justify-content: space-between;
+    /* alinhamento vertical */
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    min-height: 80vh;
+}
+
+section.banner {
+    padding: 50px;
+}
+
+section.banner .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+p {
+    color: #C4C4C4;
+}
+
+footer {
+    text-align: center;
+    background-color: #C4C4C4;
+    padding: 10px;
+}
+footer p {
+    color: #fff;
+}
+
+/* SOBRE */
+section.introducao-sobre {
+    padding: 50px 0;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+section.introducao-sobre h1 {
+    color: #00796B;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+h2 {
+    color: #00796B;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+section.introducao-sobre p {
+    color: #C4C4C4;
+    padding-bottom: 90px;
+}
+section.introducao-sobre li {
+    color: #C4C4C4;
+}
+.introducao-sobre .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.video-sobre iframe {
+    width: 100%;
+    height: 600px;
+}
+section.textos-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+section.textos-sobre p {
+    color: #C4C4C4;
+    text-align: center;
+}
+
+/* SERVIÇOS */
+section.desenvolvimento .container,section.consultoria .container,section.marketing .container {
+    display: flex;
+    justify-content: space-between;
+}
+section.marketing .container {
+    flex-direction: row-reverse;
+}
+
+div.container h1 {
+    color: #00796B;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+main {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+section.desenvolvimento .container h2,section.consultoria .container h2,section.marketing .container h2 {
+    padding-top: 20px;
+}
+
+/*Contato*/
+.contato {
+    display: flex;
+    justify-content:space-between;
+}
+.contato form input:not([type="radio"]), .contato form textarea {
+    width: 100%;
+    padding: 5px;
+}
+.contato form label {
+    margin: 10px 0 5px;
+    display: inline-block;
+    color: #C4C4C4;
+}
+.contato form button {
+    border: none;
+    background-color: #00796B;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 100%;
+    margin: 15px 0;
+}
+.contato .info {
+    padding: 15px 30px;
+}
+.contato .info iframe {
+    max-width: 100%;
+    width: 700px;
+    height: 300px;
+}
+
+/* Orçamento */
+.orcamento {
+    display: flex;
+    justify-content:space-between;
+}
+.orcamento form input:not([type="radio"], [type="checkbox"]), .orcamento form textarea {
+    width: 100%;
+    padding: 5px;
+}
+.orcamento form label {
+    margin: 10px 0 5px;
+    display: inline-block;
+    color: #C4C4C4;
+}
+.orcamento form button {
+    border: none;
+    background-color: #00796B;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 100%;
+    margin: 15px 0;
+}
