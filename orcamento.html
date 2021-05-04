@@ -41,9 +41,9 @@
                     <label for="telefone">Telefone</label>
                     <input type="tel" name="telefone" id="telefone" required>
         
-                    <p>Selecione um serviço:</p>
-        
-                    <input type="checkbox" name="servicos" id="dev" value="Desenvolvimento Web">
+                    <fieldset>
+                        <legend>Serviços</legend>
+                        <input type="checkbox" name="servicos" id="dev" value="Desenvolvimento Web">
                     <label for="dev">Desenvolvimento Web</label>
         
                     <input type="checkbox" name="servicos" id="marketing" value="Marketing Digital">
@@ -51,16 +51,52 @@
         
                     <input type="checkbox" name="servicos" id="consultoria" value="Consultoria UX">
                     <label for="consultoria">Consultoria UX</label>
+                    </fieldset>
 
-                    <br>
-        
-                    <input type="radio" name="urgencia" id="urgencia" value="urgencia">
-                    <label for="urgencia">Urgência na entrega</label>
+                    <fieldset>
+                        <legend>Tem urgência na entrega?</legend>
+                        <label for="sim">Sim</label>
+                        <input type="radio" name="sim" id="sim" value="sim">
 
-                    <br>
-        
+                        <label for="nao">Não</label>
+                        <input type="radio" name="nao" id="nao" value="nao">
+
+                    </fieldset>
+                    
+                    <label for="data_entrega">Data de Entrega</label>
+                    <input type="date" name="data_entrega" id="data_entrega">
+
                     <label for="descricao">Descrição</label>
                     <textarea name="descricao" id="descricao"></textarea>
+
+                    <label for="anexo">Anexos</label>
+                    <input type="file" name="anexo" id="anexo">
+
+                    <label for="publico_alvo">Qual o público alvo?</label>
+                    <input type="text" name="publico_alvo" id="publico_alvo">
+                    
+
+                    <label for="pagamento">Forma de Pagamento</label>
+                    <select name="pagamento" id="pagamento">
+                        <option selected disabled>Selecione uma opção</option>
+                        <option value="Débito">Débito</option>
+                        <option value="Crédito">Crédito</option>
+                        <option value="Dinheiro">Dinheiro</option>
+                        <option value="Boleto">Boleto</option>
+                        <option value="Transferência Bancária">Transferência Bancária</option>
+                    </select>
+
+                    <br>
+
+                    <label for="orgiem">Como conheceu a Grow Up?</label>
+                    <select name="orgiem" id="origem">
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Linkedin">Linkedin</option>
+                        <option value="Google">Google</option>
+                        <option value="Amarelinho">Amarelinho</option>
+                        <option value="Outro">Outro</option>
+                    </select>
         
                     <button type="submit">Enviar</button>
                 </form>

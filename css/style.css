@@ -176,7 +176,7 @@ section.desenvolvimento .container h2,section.consultoria .container h2,section.
     display: flex;
     justify-content:space-between;
 }
-.orcamento form input:not([type="radio"], [type="checkbox"]), .orcamento form textarea {
+.orcamento form input:not([type="radio"], [type="checkbox"]), .orcamento form textarea, .orcamento form select {
     width: 100%;
     padding: 5px;
 }
@@ -193,4 +193,18 @@ section.desenvolvimento .container h2,section.consultoria .container h2,section.
     padding: 10px;
     width: 100%;
     margin: 15px 0;
+}
+.orcamento form fieldset {
+    color: #C4C4C4;
+    border-color: #fff;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 7px;
+}
+.orcamento form textarea {
+    resize: none;
+    height: 100px;
+}
+.orcamento form input:focus,.orcamento form textarea:focus,.orcamento form select:focus  {
+    outline-color: #00796B;
 }
