@@ -250,14 +250,42 @@ section.desenvolvimento .container h2,section.consultoria .container h2,section.
     max-width: 100%;
 }
 @media (max-width: 900px) {
-    section.banner .container {
+    section.banner .container, section.introducao-sobre .container .intro, section.desenvolvimento div.container, section.marketing div.container, section.consultoria div.container, div.contato{
         flex-wrap: wrap;
+        justify-content:center;
+    }
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section.video-sobre iframe {
+        padding: 40px;
+        height:400px;
     }
     section.banner .container .texto {
         text-align: center;
+        padding-top: 20px;
     }   
     section.banner {
-        padding:0 40px 40px;
+        padding: 60px 20px 40px;
+    }
+    section.desenvolvimento .container .texto, section.marketing .container .texto, section.consultoria .container .texto{
+        text-align: center;
+        padding: 20px 40px;
+    }
+    section.desenvolvimento .container .img-destaque, section.marketing .container .img-destaque, section.consultoria .container .img-destaque {
+        align-self: center;
+        padding-top: 20px;
+    }
+    .container h1 {
+        padding-left: 20px;
+    }
+    .contato, .orcamento {
+        padding: 0 30px 10px;
+    }
+    section.introducao-sobre, section.textos-sobre {
+        padding: 20px;
+        margin: 20px
     }
 }
 @media (max-width:624px) {
